@@ -1,0 +1,30 @@
+@import "tailwindcss";
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+@layer utilities {
+  .hover\:shadow-3d-cyan:hover {
+    box-shadow: rgba(6, 182, 212, 0.4) 3px 3px, rgba(6, 182, 212, 0.4) 3px 3px,
+      rgba(6, 182, 212, 0.4) 3px 3px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #083344;
+  border: 1px solid #083344;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #9ca3af;
+}
+::selection {
+  background: #9ca3af;
+  color: #083344;
+}
+
+body {
+  background-color: #083344;
+}
