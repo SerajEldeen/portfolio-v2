@@ -28,7 +28,7 @@ function About() {
   return (
     <section className="md:px-50 px-15 py-15" id="about">
       {/* Heading */}
-      <h1 className="flex flex-col sm:flex-row items-center gap-4 text-3xl text-white">
+      <h1 className="flex flex-col sm:flex-row items-center font-medium gap-4 text-3xl text-white">
         About Me
         <span className="md:w-[30%] w-[30%] h-[1px] bg-slate-500" />
       </h1>
@@ -104,7 +104,7 @@ function About() {
             alt="Avatar"
             width={300}
             height={300}
-            className="object-cover w-full h-full grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
+            className="object-cover w-full h-full md:grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
           />
         </motion.div>
       </div>

@@ -9,7 +9,7 @@ function Navbar() {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#experience", label: "Experience" },
-    { href: "#work", label: "Word" },
+    { href: "#work", label: "Work" },
     { href: "#contact", label: "Contact" },
   ];
   // Animation variants
@@ -66,7 +66,7 @@ function Navbar() {
         <motion.div whileHover={{ scale: 1.05 }}>
           <Link
             href="./SerajEldeen.pdf"
-            className="ml-4 px-4 py-2 text-sm font-mono text-cyan-500 border border-cyan-500 rounded transition-colors"
+            className="ml-4 px-4 py-2 text-sm font-mono text-cyan-500 border border-cyan-500 rounded  hover:shadow-3d-cyan transition-transform duration-300"
           >
             Resume
           </Link>

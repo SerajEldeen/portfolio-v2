@@ -8,7 +8,8 @@ export default function Social() {
     <div
       className="
         relative w-full flex justify-center mt-12
-        md:fixed md:bottom-0 md:left-16 md:w-auto md:flex-col md:items-center
+        pb-10
+        md:fixed md:pb-0 md:bottom-0 md:left-16 md:w-auto md:flex-col md:items-center
         z-50
       "
     >
