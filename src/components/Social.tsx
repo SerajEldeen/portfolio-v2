@@ -9,7 +9,7 @@ export default function Social() {
       className="
         relative w-full flex justify-center mt-12
         pb-10
-        md:fixed md:pb-0 md:bottom-0 md:left-16 md:w-auto md:flex-col md:items-center
+        md:fixed md:pb-0 md:bottom-0 md:left-10 md:w-auto md:flex-col md:items-center
         z-50
       "
     >
@@ -19,7 +19,7 @@ export default function Social() {
             href="https://github.com/SerajEldeen"
             target="_blank"
             rel="noreferrer"
-            className="md:p-0.5 hover:-translate-y-1 transition-transform hover:text-cyan-500"
+            className="md:p-0.5  transition-transform hover:text-cyan-500"
           >
             <FaGithub size={22} />
           </Link>
@@ -29,7 +29,7 @@ export default function Social() {
             href="https://www.linkedin.com/in/seraj-eldeen-abdullah/"
             target="_blank"
             rel="noreferrer"
-            className="md:p-0.5 hover:-translate-y-1 transition-transform hover:text-cyan-500"
+            className="md:p-0.5  transition-transform hover:text-cyan-500"
           >
             <FaLinkedin size={22} />
           </Link>
@@ -39,7 +39,7 @@ export default function Social() {
             href="mailto:serageldeen13@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="md:p-0.5 hover:-translate-y-1 transition-transform hover:text-cyan-500"
+            className="md:p-0.5  transition-transform hover:text-cyan-500"
           >
             <SiGmail size={22} />
           </Link>
