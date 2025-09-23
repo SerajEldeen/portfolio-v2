@@ -8,6 +8,7 @@ import Social from "@/components/Social";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import AddProject from "@/components/AddProject";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [showLoader, setShowLoader] = useState(true);
@@ -31,6 +32,7 @@ export default function Home() {
           <Experience />
           <Work />
           <AddProject />
+          <Contact />
           <Social />
         </>
       )}

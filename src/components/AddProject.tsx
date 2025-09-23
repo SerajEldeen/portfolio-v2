@@ -65,14 +65,6 @@ function AddProject() {
       github: "#",
       live: "#",
     },
-    {
-      title: "Portfolio Website",
-      description:
-        "Responsive personal portfolio with modern animations, optimized for performance and SEO.",
-      tech: ["React", "Next.js", "Framer Motion"],
-      github: "#",
-      live: "#",
-    },
   ];
 
   // Apply pagination
@@ -126,7 +118,7 @@ function AddProject() {
           >
             {/* First Row */}
             <div className="flex justify-between items-center mb-4">
-              <CiFileOn size={30} className="text-cyan-500" />
+              <CiFileOn size={40} className="text-cyan-500" />
               <div className="flex gap-3">
                 <FaGithub
                   size={22}
@@ -163,14 +155,15 @@ function AddProject() {
           </motion.div>
         ))}
       </motion.div>
-
-      <button
-        type="button"
-        className="mt-6 px-8 py-3 text-sm font-mono text-cyan-400 border border-cyan-400 rounded hover:shadow-3d-cyan transition-transform duration-300 hover:-translate-x-1 hover:-translate-y-1 cursor-pointer"
-        onClick={handleShownProjects}
-      >
-        {n < projects.length ? "Show More" : "Show Less"}
-      </button>
+      {projects.length <= 6 || (
+        <button
+          type="button"
+          className="mt-6 px-8 py-3 text-sm font-mono text-cyan-400 border border-cyan-400 rounded hover:shadow-3d-cyan transition-transform duration-300 hover:-translate-x-1 hover:-translate-y-1 cursor-pointer"
+          onClick={handleShownProjects}
+        >
+          {n < projects.length ? "Show More" : "Show Less"}
+        </button>
+      )}
     </section>
   );
 }
