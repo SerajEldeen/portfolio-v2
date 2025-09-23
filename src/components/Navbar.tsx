@@ -9,10 +9,9 @@ function Navbar() {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#experience", label: "Experience" },
-    { href: "#work", label: "Work" },
+    { href: "#projects", label: "Work" },
     { href: "#contact", label: "Contact" },
   ];
-  // Animation variants
   const navVariants = {
     hidden: { opacity: 0, y: -30 },
     visible: {

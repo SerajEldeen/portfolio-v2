@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { CiShare1 } from "react-icons/ci";
+import { easeOut, motion } from "framer-motion";
 
 const projects = [
   {
@@ -21,38 +23,65 @@ const projects = [
     github: "#",
     live: "#",
   },
-  // add more here...
 ];
+
+// Variants
+const fadeUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      delay: i * 0.2,
+      ease: easeOut,
+    },
+  }),
+};
 
 function Work() {
   return (
-    <section className="md:px-50 px-15 py-15" id="work">
+    <section className="md:px-50 px-15 py-15" id="projects">
       {/* Heading */}
-      <h1 className="flex flex-col sm:flex-row items-center gap-4 text-3xl font-medium text-white">
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="flex flex-col sm:flex-row items-center gap-4 text-3xl font-medium text-white"
+      >
         Some Things I&apos;ve Built
         <span className="md:w-[30%] w-[30%] h-[1px] bg-slate-500" />
-      </h1>
+      </motion.h1>
 
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-20 pt-5">
         {projects.map((project, i) => {
           const isEven = i % 2 === 0;
 
           return (
-            <div
+            <motion.div
               key={i}
+              custom={i}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
               className={`relative flex flex-col md:flex-row gap-10 ${
                 !isEven ? "md:flex-row-reverse" : ""
               }`}
             >
               {/* Image */}
-              <div className="z-10 relative w-full h-[400px] md:h-[450px] rounded overflow-hidden">
+              <motion.div
+                transition={{ duration: 0.4 }}
+                className="z-10 relative w-full h-[400px] md:h-[450px] rounded overflow-hidden"
+              >
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover opacity-10 md:opacity-50 transition-all duration-700 md:hover:opacity-100 cursor-pointer"
                 />
-              </div>
+              </motion.div>
 
               {/* Text Side */}
               <div
@@ -61,7 +90,7 @@ function Work() {
                 }`}
               >
                 <p
-                  className={`text-cyan-500 md:text-xl text-md  ${
+                  className={`text-cyan-500 text-xl  ${
                     isEven ? "md:text-end" : "md:text-start"
                   }`}
                 >
@@ -69,7 +98,7 @@ function Work() {
                 </p>
 
                 <h3
-                  className={`text-white text-xl md:text-2xl hover:text-cyan-500 cursor-pointer transition-colors duration-300  ${
+                  className={`text-white text-2xl hover:text-cyan-500 cursor-pointer transition-colors duration-300  ${
                     isEven ? "md:text-end" : "md:text-start"
                   }`}
                 >
@@ -83,7 +112,7 @@ function Work() {
                 </div>
 
                 <ul
-                  className={`flex gap-2 pt-5 text-slate-400 sm:text-md text-sm ${
+                  className={`flex gap-2 pt-5 text-slate-400 text-md  ${
                     isEven ? "md:justify-end" : "md:justify-start"
                   }`}
                 >
@@ -101,7 +130,7 @@ function Work() {
                   <CiShare1 size={20} className="hover:text-cyan-500" />
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

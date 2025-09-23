@@ -95,7 +95,7 @@ function About() {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: easeOut }}
           viewport={{ once: true, amount: 0.3 }}
           className="group w-72 h-72 overflow-hidden rounded-md transition-all duration-300 hover:rounded-xl"
         >
