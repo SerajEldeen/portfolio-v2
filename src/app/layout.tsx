@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Social from "@/components/Social";
 export const metadata: Metadata = {
   title: "Seraj Eldeen",
   description: "This is Portfolio for Seraj Eldeen",
@@ -12,7 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* <Social /> */}
+      </body>
     </html>
   );
 }

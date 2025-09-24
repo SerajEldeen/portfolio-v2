@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Loading from "./loading";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import Social from "@/components/Social";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import AddProject from "@/components/AddProject";
@@ -33,7 +32,6 @@ export default function Home() {
           <Work />
           <AddProject />
           <Contact />
-          <Social />
         </>
       )}
     </>
