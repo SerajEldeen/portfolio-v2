@@ -48,7 +48,7 @@ function Experience() {
   return (
     <section className="md:px-50 px-15 py-15" id="experience">
       {/* Heading */}
-      <h1 className="flex flex-col sm:flex-row items-center gap-4 text-3xl font-medium text-white">
+      <h1 className="flex flex-col sm:flex-row items-center gap-4 md:text-3xl text-2xl font-medium text-white">
         Where I&apos;ve Worked
         <span className="md:w-[30%] w-[30%] h-[1px] bg-slate-500" />
       </h1>
