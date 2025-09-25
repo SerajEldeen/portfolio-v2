@@ -1,0 +1,106 @@
+[
+  {
+    "year": "2025",
+    "title": "Trendora",
+    "madeAt": "——",
+    "builtWith": "Angular,Typescript,TailwindCSS",
+    "live": "https://trendora-three.vercel.app/",
+    "github": "https://github.com/SerajEldeen/Trendora"
+  },
+  {
+    "year": "2025",
+    "title": "Memory Card Game",
+    "madeAt": "DEPI",
+    "builtWith": "HTML,CSS,JS",
+    "live": "https://codepen.io/Seraj-Eldeen/pen/zxvLrYo",
+    "github": ""
+  },
+  {
+    "year": "2025",
+    "title": "Exam Questions",
+    "madeAt": "DEPI",
+    "builtWith": "HTML,CSS,JS",
+    "live": "https://codepen.io/Seraj-Eldeen/pen/ByoVxXK",
+    "github": ""
+  },
+  {
+    "year": "2025",
+    "title": "Memory Card Game",
+    "madeAt": "DEPI",
+    "builtWith": "HTML,CSS,JS",
+    "live": "https://codepen.io/Seraj-Eldeen/pen/zxvLrYo",
+    "github": ""
+  },
+  {
+    "year": "2025",
+    "title": "Monac",
+    "madeAt": "DEPI",
+    "builtWith": "HTML,CSS,JS",
+    "live": "https://serajeldeen.github.io/Monac-DEPI/index.html",
+    "github": "https://github.com/SerajEldeen/Monac-DEPI"
+  },
+  {
+    "year": "2025",
+    "title": "Finder",
+    "madeAt": "DEPI",
+    "builtWith": "HTML,CSS",
+    "live": "https://serajeldeen.github.io/HTML-CSS/Finder/index.html",
+    "github": "https://github.com/SerajEldeen/HTML-CSS/tree/master/Finder"
+  },
+  {
+    "year": "2025",
+    "title": "Proshop",
+    "madeAt": "——",
+    "builtWith": "Node.js Express.js, MongoDB",
+    "live": "",
+    "github": "https://github.com/SerajEldeen/Proshop"
+  },
+  {
+    "year": "2025",
+    "title": "CloudFileHandling",
+    "madeAt": "——",
+    "builtWith": "AWS S3, AWS EC2, React.js, Node.js, Express.js, Multer.js",
+    "live": "",
+    "github": "https://github.com/SerajEldeen/CloudFileHandling"
+  },
+  {
+    "year": "2024",
+    "title": "Candle",
+    "madeAt": "——",
+    "builtWith": "HTML,CSS",
+    "live": "https://serajeldeen.github.io/HTML-CSS/Candle/candle.html",
+    "github": "https://github.com/SerajEldeen/HTML-CSS/tree/master/Candle"
+  },
+  {
+    "year": "2024",
+    "title": "Kasper Template",
+    "madeAt": "——",
+    "builtWith": "HTML,CSS",
+    "live": "https://serajeldeen.github.io/HTML-CSS/Kasper%20Template/kasper.html",
+    "github": "https://github.com/SerajEldeen/HTML-CSS/tree/master/Kasper%20Template"
+  },
+  {
+    "year": "2024",
+    "title": "Lasles Template",
+    "madeAt": "——",
+    "builtWith": "HTML,CSS",
+    "live": "https://serajeldeen.github.io/HTML-CSS/Lasles%20Template/lasles.html",
+    "github": "https://github.com/SerajEldeen/HTML-CSS/tree/master/Lasles%20Template"
+  },
+  {
+    "year": "2024",
+    "title": "Leon Template",
+    "madeAt": "——",
+    "builtWith": "HTML,CSS",
+    "live": "https://serajeldeen.github.io/HTML-CSS/Leon%20Template/leon.html",
+    "github": "https://github.com/SerajEldeen/HTML-CSS/tree/master/Leon%20Template"
+  },
+  {
+    "year": "2024",
+    "title": "Youtube Template",
+    "madeAt": "——",
+    "builtWith": "HTML,CSS",
+    "live": "https://serajeldeen.github.io/HTML-CSS/Youtube.com/youtube.html",
+    "github": "https://github.com/SerajEldeen/HTML-CSS/tree/master/Youtube.com"
+  }
+]

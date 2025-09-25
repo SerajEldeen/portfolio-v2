@@ -24,6 +24,9 @@ function About() {
     "React",
     "Node.js",
     "Express.js",
+    "mongodb",
+    "Prisma (ORM)",
+    "TailwindCSS",
   ];
   return (
     <section className="md:px-50 px-15 py-15" id="about">
@@ -45,28 +48,18 @@ function About() {
             variants={paragraphVariants}
             className="py-3 text-slate-500 font-medium max-w-xl"
           >
-            Hello! My name is Seraj Eldeen and I enjoy creating things that live
-            on the internet. My interest in web development started back in 2023
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Hello! My name is Seraj Eldeen and I enjoy creating things that help
+            people to ease their lives. My interest in web development started
+            back in 2024 after finishing the high School when I decided to start
+            a career in Web Development.
           </motion.p>
 
           <motion.p
             variants={paragraphVariants}
             className="py-3 text-slate-500 font-medium max-w-xl"
           >
-            Fast-forward to today, and I’ve had the privilege of working at My
-            main focus these days is building accessible, inclusive products and
-            digital experiences at Upstatement for a variety of clients.
-          </motion.p>
-
-          <motion.p
-            variants={paragraphVariants}
-            className="py-3 text-slate-500 font-medium max-w-xl"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-            eligendi porro error tenetur ex ipsam.
+            Fast-forward to today, and I’ve had the privilege of working on many
+            projects that have helped me learn and grow.
           </motion.p>
 
           <motion.p
@@ -78,7 +71,7 @@ function About() {
 
           {/* List of Skills */}
           <motion.div variants={paragraphVariants}>
-            <ul className="grid grid-cols-2 gap-x-2 gap-y-1">
+            <ul className="grid grid-cols-3 gap-x-2 gap-y-1">
               {skills.map((tech) => (
                 <li
                   key={tech}

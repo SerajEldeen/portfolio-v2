@@ -3,25 +3,26 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { CiShare1 } from "react-icons/ci";
 import { easeOut, motion } from "framer-motion";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "Halcyon Theme",
+    title: "Panto Landing page",
     description:
-      "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
-    image: "/Panto.png",
-    github: "#",
-    live: "#",
+      "Panto is a Figma landing page template designed for furniture and home-interior decor, featuring a clean, modern layout to showcase products and create an engaging user experience. It includes both Arabic and English translations, as well as light and dark themes.",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Swiper.js"],
+    image: "/projects/Panto.png",
+    github: "https://github.com/SerajEldeen/Panto",
+    live: "https://panto-landingpage.netlify.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "PostgreStore",
     description:
-      "Responsive personal portfolio with modern animations, optimized for performance and SEO.",
-    tech: ["React", "Next.js", "Framer Motion"],
-    image: "/Panto.png",
-    github: "#",
-    live: "#",
+      "PostgreStore is a complete PERN stack project that implements CRUD operations for authenticated users.",
+    tech: ["PostgreSql", "Express.js", "Daisy UI", "React.js"],
+    image: "/projects/PostgreStore.png",
+    github: "https://github.com/SerajEldeen/PostgreStore",
+    live: "https://github.com/SerajEldeen/PostgreStore",
   },
 ];
 
@@ -48,7 +49,7 @@ function Work() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="flex flex-col sm:flex-row items-center gap-4 text-3xl font-medium text-white"
+        className="flex flex-col sm:flex-row items-center gap-4 md:text-3xl text-2xl font-medium text-white"
       >
         Some Things I&apos;ve Built
         <span className="md:w-[30%] w-[30%] h-[1px] bg-slate-500" />
@@ -75,12 +76,14 @@ function Work() {
                 transition={{ duration: 0.4 }}
                 className="z-10 relative w-full h-[400px] md:h-[450px] rounded overflow-hidden"
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover opacity-10 md:opacity-50 transition-all duration-700 md:hover:opacity-100 cursor-pointer"
-                />
+                <Link href={project.live} target="_blank">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover opacity-10 md:opacity-50 transition-all duration-700 md:hover:opacity-100 cursor-pointer"
+                  />
+                </Link>
               </motion.div>
 
               {/* Text Side */}

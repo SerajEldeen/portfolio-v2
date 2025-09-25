@@ -4,27 +4,9 @@ import Link from "next/link";
 import { CiShare1 } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { easeOut, motion } from "framer-motion";
+import ArchiveProjects from "../../static/archive.json";
 
 function Page() {
-  const projects = [
-    {
-      year: "2025",
-      title: "Portfolio Website",
-      madeAt: "Personal",
-      builtWith: "Next.js, TailwindCSS",
-      preview: "https://example.com",
-      github: "https://github.com/username/portfolio",
-    },
-    {
-      year: "2024",
-      title: "Stock Tracker",
-      madeAt: "DEPI Internship",
-      builtWith: "React, Node.js, PostgreSQL",
-      preview: "https://example.com",
-      github: "https://github.com/username/stock-tracker",
-    },
-  ];
-
   // parent container for stagger effect
   const container = {
     hidden: { opacity: 0 },
@@ -71,7 +53,7 @@ function Page() {
               </tr>
             </thead>
             <motion.tbody variants={container}>
-              {projects.map((project, idx) => (
+              {ArchiveProjects.map((project, idx) => (
                 <motion.tr
                   key={idx}
                   variants={row}
@@ -86,26 +68,30 @@ function Page() {
                     {project.builtWith}
                   </td>
                   <td className="py-3 px-4 flex gap-3">
-                    <Link
-                      href={project.preview}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <CiShare1
-                        size={22}
-                        className="hover:text-cyan-500 text-slate-400"
-                      />
-                    </Link>
-                    <Link
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithub
-                        size={22}
-                        className="hover:text-cyan-500 text-slate-400"
-                      />
-                    </Link>
+                    {project.live && (
+                      <Link
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <CiShare1
+                          size={22}
+                          className="hover:text-cyan-500 text-slate-400"
+                        />
+                      </Link>
+                    )}
+                    {project.github && (
+                      <Link
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub
+                          size={22}
+                          className="hover:text-cyan-500 text-slate-400"
+                        />
+                      </Link>
+                    )}
                   </td>
                 </motion.tr>
               ))}

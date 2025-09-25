@@ -8,7 +8,7 @@ function Contact() {
         <h2 className="text-slate-400 text-3xl mb-3">Get In Touch</h2>
         <p className="text-slate-500 text-xl max-w-[400px] mx-auto">
           my inbox is always open. Whether you have a question or just want to
-          say hi, I’ll try my best to get back to you!
+          say hi, I’ll do my best to get back to you!
         </p>
       </div>
       <div className="flex flex-col items-center">
