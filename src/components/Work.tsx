@@ -22,7 +22,7 @@ const projects = [
     tech: ["PostgreSql", "Express.js", "Daisy UI", "React.js"],
     image: "/projects/PostgreStore.png",
     github: "https://github.com/SerajEldeen/PostgreStore",
-    live: "https://github.com/SerajEldeen/PostgreStore",
+    live: "",
   },
 ];
 
@@ -76,7 +76,7 @@ function Work() {
                 transition={{ duration: 0.4 }}
                 className="z-10 relative w-full h-[400px] md:h-[450px] rounded overflow-hidden"
               >
-                <Link href={project.live} target="_blank">
+                <Link href={project.live || project.github} target="_blank">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -129,8 +129,14 @@ function Work() {
                     isEven ? "md:right-0" : "md:left-0"
                   }`}
                 >
-                  <FaGithub size={20} className="hover:text-cyan-500" />
-                  <CiShare1 size={20} className="hover:text-cyan-500" />
+                  <Link href={project.github} target="_blank">
+                    <FaGithub size={20} className="hover:text-cyan-500" />
+                  </Link>
+                  {project.live && (
+                    <Link href={project.live} target="_blank">
+                      <CiShare1 size={20} className="hover:text-cyan-500" />
+                    </Link>
+                  )}
                 </div>
               </div>
             </motion.div>
