@@ -1,43 +1,71 @@
 "use client";
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { CiShare1 } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { easeOut, motion } from "framer-motion";
-import ArchiveProjects from "../../static/archive.json";
+import SoftwareEngineering from "../../static/softwareEngineerArchive.json";
+import DataScientist from "../../static/dataScienceArchive.json";
 
 function Page() {
-  // parent container for stagger effect
+  const [active, setActive] = useState("data");
+  const data = active === "software" ? SoftwareEngineering : DataScientist;
+
+  // Animation settings
   const container = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15 },
-    },
+    visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
   };
 
-  // each row animation
   const row = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: easeOut },
-    },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: easeOut } },
   };
 
   return (
     <>
       <Navbar />
       <section className="md:px-40 px-10 py-5">
-        <h1 className="text-slate-400 text-5xl">Archive</h1>
-        <p className="text-cyan-500 leading-10 tracking-wide">
-          A big list of things I&apos;ve worked on
-        </p>
+        <div className="flex md:flex-row flex-col justify-between items-center flex-wrap gap-3">
+          <div>
+            <h1 className="text-slate-400 text-5xl">Archive</h1>
+            <p className="text-cyan-500 leading-10 tracking-wide">
+              A big list of things I&apos;ve worked on
+            </p>
+          </div>
+
+          {/* Filter Buttons */}
+          <div className="flex gap-3">
+            <button
+              type="button"
+              onClick={() => setActive("data")}
+              className={`px-5 py-2 rounded-full border transition-all duration-300 ${
+                active === "data"
+                  ? "bg-cyan-500 text-white border-cyan-500 shadow-lg shadow-cyan-500/30"
+                  : "border-slate-600 text-slate-300 hover:bg-slate-700"
+              }`}
+            >
+              Data Scientist
+            </button>
+            <button
+              type="button"
+              onClick={() => setActive("software")}
+              className={`px-5 py-2 rounded-full border transition-all duration-300 ${
+                active === "software"
+                  ? "bg-cyan-500 text-white border-cyan-500 shadow-lg shadow-cyan-500/30"
+                  : "border-slate-600 text-slate-300 hover:bg-slate-700"
+              }`}
+            >
+              Software Engineer
+            </button>
+          </div>
+        </div>
 
         {/* Table */}
         <div className="overflow-x-auto mt-10">
           <motion.table
+            key={active} // this re-triggers animation when switching
             className="w-full text-left border-collapse"
             variants={container}
             initial="hidden"
@@ -53,7 +81,7 @@ function Page() {
               </tr>
             </thead>
             <motion.tbody variants={container}>
-              {ArchiveProjects.map((project, idx) => (
+              {data.map((project, idx) => (
                 <motion.tr
                   key={idx}
                   variants={row}

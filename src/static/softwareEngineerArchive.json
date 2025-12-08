@@ -1,6 +1,46 @@
 [
   {
     "year": "2025",
+    "title": "Digoo Hand Made",
+    "madeAt": "——",
+    "builtWith": "Next.js, TypeScript, Zustand",
+    "live": "https://digoo.netlify.app/",
+    "github": "https://github.com/SerajEldeen/digoo"
+  },
+  {
+    "year": "2025",
+    "title": "Hidaya",
+    "madeAt": "——",
+    "builtWith": "Next.js, TypeScript, TailwindCSS",
+    "live": "https://hidayaa.netlify.app/",
+    "github": "https://github.com/SerajEldeen/Hidaya"
+  },
+  {
+    "year": "2025",
+    "title": "TheAmazingEgypt",
+    "madeAt": "——",
+    "builtWith": "React, TypeScript, TailwindCSS",
+    "live": "https://the-amazing-egypt.netlify.app/",
+    "github": "https://github.com/SerajEldeen/TheAmazingEgypt"
+  },
+  {
+    "year": "2025",
+    "title": "Book-Store",
+    "madeAt": "——",
+    "builtWith": "React, Express.js, MongoDB",
+    "live": "",
+    "github": "https://github.com/SerajEldeen/Book-Store"
+  },
+  {
+    "year": "2025",
+    "title": "GoldXchange",
+    "madeAt": "——",
+    "builtWith": "Next-auth, React-query, TailwindCSS",
+    "live": "https://goldxchange.netlify.app/",
+    "github": "https://github.com/SerajEldeen/GoldXchange"
+  },
+  {
+    "year": "2025",
     "title": "Trendora",
     "madeAt": "——",
     "builtWith": "Angular,Typescript,TailwindCSS",
@@ -62,6 +102,14 @@
     "builtWith": "AWS S3, AWS EC2, React.js, Node.js, Express.js, Multer.js",
     "live": "",
     "github": "https://github.com/SerajEldeen/CloudFileHandling"
+  },
+  {
+    "year": "2024",
+    "title": "Portfolio V1",
+    "madeAt": "——",
+    "builtWith": "React, TailwindCSS, Framer Motion",
+    "live": "https://serajeldeen13.netlify.app/",
+    "github": "https://github.com/SerajEldeen/Portfolio"
   },
   {
     "year": "2024",

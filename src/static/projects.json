@@ -1,44 +1,16 @@
 [
   {
-    "title": "Digoo Hand Made",
-    "description": "Digoo is a handcrafted, leather-focused landing page built with love. It’s designed to showcase customized handmade leather products, built with Arabic support, and responsive across all devices.",
-    "tech": ["Next.js", "TypeScript", "Zustand"],
-    "github": "https://github.com/SerajEldeen/digoo",
-    "live": "https://digoo.netlify.app/"
-  },
-  {
-    "title": "Hidaya",
-    "description": "Hidaya is a modern, user-friendly website designed with a noble intention: to raise awareness about the teachings of Islam. The project showcases Islamic habits, values, and lifestyle through elegant UI, interactive components, and responsive design.",
-    "tech": ["Next.js", "TypeScript", "TailwindCSS"],
-    "github": "https://github.com/SerajEldeen/Hidaya",
-    "live": "https://hidayaa.netlify.app/"
-  },
-  {
-    "title": "TheAmazingEgypt",
-    "description": "TheAmazingEgypt is a project that showcases the breathtaking beauty of Egypt, highlighting its most stunning and iconic destinations. It offers an unforgettable experience for visitors looking to explore and immerse themselves in the wonders of Egypt.",
-    "tech": ["React", "TypeScript", "TailwindCSS"],
-    "github": "https://github.com/SerajEldeen/TheAmazingEgypt",
-    "live": "https://the-amazing-egypt.netlify.app/"
-  },
-  {
-    "title": "Book-Store",
-    "description": "Book-Store is a user-friendly web application that allows users to manage books through full CRUD operations, with all data stored in a MongoDB database.",
-    "tech": ["React", "Express.js", "MongoDB"],
-    "github": "https://github.com/SerajEldeen/Book-Store",
+    "title": "NYC Transportations patterns",
+    "description": "This project presents a detailed analysis of New York City’s transportation ecosystem, exploring how mobility behaved across time, space, and competitors. The dashboard highlights whether transportation supply meets growing demand and uncovers patterns in trip trends, geographic hotspots, and operational efficiency.",
+    "tech": ["Power BI"],
+    "github": "https://github.com/SerajEldeen/Transportation_Patterns-Dashboard",
     "live": ""
   },
   {
-    "title": "GoldXchange",
-    "description": "GoldXchange is a responsive web app for tracking and exchanging gold prices, featuring Google/GitHub login and a clear privacy policy.",
-    "tech": ["Next-auth", "React-query", "TailwindCSS"],
-    "github": "https://github.com/SerajEldeen/GoldXchange",
-    "live": "https://goldxchange.netlify.app/"
-  },
-  {
-    "title": "Portfolio V1",
-    "description": "If you want to go backend time this is my first Personal Website V1, a user-friendly web application.",
-    "tech": ["React", "TailwindCSS", "Framer Motion"],
-    "github": "https://github.com/SerajEldeen/Portfolio",
-    "live": "https://serajeldeen13.netlify.app/"
+    "title": "Predict Health Metrics",
+    "description": "This project focuses on analyzing health metrics to perform two predictive tasks: predicting blood pressure using regression models and predicting diabetes outcomes using classification models. The workflow encompasses data cleaning, visualization, feature analysis, and the training of both linear and logistic models to generate accurate and actionable health predictions.",
+    "tech": ["colab", "python", "Scikit-learn"],
+    "github": "https://github.com/SerajEldeen/PredictHealthMetrics",
+    "live": ""
   }
 ]

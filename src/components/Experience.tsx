@@ -34,7 +34,7 @@ function Experience() {
       name: "DEPI",
       role: "Software Engineer",
       link: "https://depi.gov.eg/",
-      date: "June 2025-Present",
+      date: "June 2025-December 2025",
       whatDone: [
         "Learn and apply software engineering principles in a professional environment.",
         "Work with a team to develop and maintain software applications.",

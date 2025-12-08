@@ -18,15 +18,15 @@ const paragraphVariants = {
 
 function About() {
   const skills: string[] = [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "Next.js",
-    "React",
-    "Node.js",
-    "Express.js",
-    "mongodb",
-    "Prisma (ORM)",
-    "TailwindCSS",
+    "Python",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Scikit-learn",
+    "TensorFlow",
+    "Keras",
+    "Power BI",
   ];
   return (
     <section className="md:px-50 px-15 py-15" id="about">
@@ -48,18 +48,23 @@ function About() {
             variants={paragraphVariants}
             className="py-3 text-slate-500 font-medium max-w-xl"
           >
-            Hello! My name is Seraj Eldeen and I enjoy creating things that help
-            people to ease their lives. My interest in web development started
-            back in 2024 after finishing the high School when I decided to start
-            a career in Web Development.
+            Hello! I&lsquo;m Seraj Eldeen — a data scientist at heart who loves
+            turning ideas into real, meaningful solutions. My journey in tech
+            began in 2024, right after high school, when I dove into web
+            development and started building projects that helped me understand
+            how to create user-focused, high-impact products.
           </motion.p>
 
           <motion.p
             variants={paragraphVariants}
             className="py-3 text-slate-500 font-medium max-w-xl"
           >
-            Fast-forward to today, and I’ve had the privilege of working on many
-            projects that have helped me learn and grow.
+            Over time, my curiosity for deeper insights and smarter systems led
+            me into the world of data science. Today, I combine my strong
+            software engineering background with advanced data analysis and
+            machine learning to build data-driven solutions that improve
+            decision-making, optimize performance, and create real business
+            value.
           </motion.p>
 
           <motion.p

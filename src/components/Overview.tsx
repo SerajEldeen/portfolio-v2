@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 function Overview() {
   return (
     <section className="md:px-40 px-10 py-5">
@@ -10,22 +8,15 @@ function Overview() {
         <h2>Seraj Eldeen.</h2>
       </div>
       <div className="text-slate-400 md:text-6xl text-3xl mb-2">
-        <h3>I build things for the Web.</h3>
+        <h3>I turn data into intelligent solutions.</h3>
       </div>
       <div className="text-slate-500 max-w-lg md:text-2xl text-xl">
         <p>
-          I&apos;m a passionate Software Engineer, building modern web
-          applications. Currently, I&apos;m an intern at{" "}
-          <Link
-            href="https://depi.gov.eg/"
-            target="_blank"
-            rel="noreferrer"
-            className="relative text-cyan-500 cursor-pointer group"
-          >
-            DEPI
-            <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-cyan-500 transition-all duration-500 group-hover:w-full" />
-          </Link>
-          .
+          {" "}
+          I’m a driven Data Scientist with a strong software engineering
+          background, specializing in building data-powered applications and
+          machine learning models. I focus on clean code, efficient pipelines,
+          and insights that truly make an impact.
         </p>
       </div>
     </section>

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import projects from "../static/projects.json";
 
 function AddProject() {
-  const [n, setN] = useState(6);
+  const [n, setN] = useState(4);
 
   // Apply pagination
   const shownProjects = projects.slice(0, n);
@@ -32,7 +32,7 @@ function AddProject() {
   return (
     <section className="md:px-50 px-15 py-15 flex justify-center items-center flex-col">
       <h2 className="text-slate-400 md:text-3xl text-2xl mb-2">
-        Other NoteWorthy Projects
+        NoteWorthy Projects
       </h2>
       <Link
         href="/archive"
@@ -61,7 +61,7 @@ function AddProject() {
               transition={{ duration: 0.4, ease: "easeOut" }}
               whileHover={{ scale: 1.05 }}
               className="bg-slate-800 rounded-xl px-5 py-6 group cursor-pointer max-w-[300px] 
-                        hover:shadow-cyan-500/20 transition-all duration-300 border border-slate-700 hover:border-cyan-500/40"
+              hover:shadow-cyan-500/20 transition-all duration-300 border border-slate-700 hover:border-cyan-500/40"
             >
               {/* First Row */}
               <div className="flex justify-between items-center mb-4">
