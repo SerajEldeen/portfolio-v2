@@ -12,5 +12,12 @@
     "tech": ["colab", "python", "Scikit-learn"],
     "github": "https://github.com/SerajEldeen/PredictHealthMetrics",
     "live": ""
+  },
+  {
+    "title": "Markov Chain Stock Movement Prediction",
+    "description": "A Markov Model is a probabilistic model that describes a system moving between different states over time, where the next state depends only on the current state, not on the full history",
+    "tech": ["colab", "python", "Scikit-learn"],
+    "github": "https://github.com/SerajEldeen/Markov-Model",
+    "live": ""
   }
 ]
