@@ -30,7 +30,10 @@ function AddProject() {
   };
 
   return (
-    <section className="md:px-50 px-15 py-15 flex justify-center items-center flex-col">
+    <section
+      className="md:px-50 px-15 py-15 flex justify-center items-center flex-col"
+      id="projects"
+    >
       <h2 className="text-slate-400 md:text-3xl text-2xl mb-2">
         NoteWorthy Projects
       </h2>
