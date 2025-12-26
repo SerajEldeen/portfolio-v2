@@ -1,9 +1,17 @@
 [
   {
-    "title": "NYC Transportations patterns",
-    "description": "This project presents a detailed analysis of New York City’s transportation ecosystem, exploring how mobility behaved across time, space, and competitors. The dashboard highlights whether transportation supply meets growing demand and uncovers patterns in trip trends, geographic hotspots, and operational efficiency.",
-    "tech": ["Power BI"],
-    "github": "https://github.com/SerajEldeen/Transportation_Patterns-Dashboard",
+    "title": "IBM Customer Churn Prediction",
+    "description": "Developed a predictive model to identify customers likely to churn, improving retention strategies by analyzing customer data, engineering features, and evaluating models for accuracy and interpretability.",
+    "tech": [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "XGBoost",
+      "Random Forest",
+      "Logistic Regression"
+    ],
+    "github": "https://github.com/SerajEldeen/IBM_Customer_Churn_Prediction",
     "live": ""
   },
   {
@@ -13,6 +21,14 @@
     "github": "https://github.com/SerajEldeen/PredictHealthMetrics",
     "live": ""
   },
+  {
+    "title": "NYC Transportations patterns",
+    "description": "This project presents a detailed analysis of New York City’s transportation ecosystem, exploring how mobility behaved across time, space, and competitors. The dashboard highlights whether transportation supply meets growing demand and uncovers patterns in trip trends, geographic hotspots, and operational efficiency.",
+    "tech": ["Power BI"],
+    "github": "https://github.com/SerajEldeen/Transportation_Patterns-Dashboard",
+    "live": ""
+  },
+
   {
     "title": "Markov Chain Stock Movement Prediction",
     "description": "A Markov Model is a probabilistic model that describes a system moving between different states over time, where the next state depends only on the current state, not on the full history",
