@@ -7,10 +7,10 @@ import { easeOut, motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const navLinks = [
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Work" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#about", label: "About" },
+    { href: "/#experience", label: "Experience" },
+    { href: "/#projects", label: "Work" },
+    { href: "/#contact", label: "Contact" },
   ];
   const navVariants = {
     hidden: { opacity: 0, y: -30 },
