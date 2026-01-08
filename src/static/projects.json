@@ -1,5 +1,21 @@
 [
   {
+    "title": "Customer Segmentation using RFM & KMeans",
+    "description": "Performed end-to-end customer segmentation using real-world retail transaction data. Cleaned 500k+ records, engineered RFM features, identified optimal clusters using Elbow Method and Silhouette Score, interpreted customer groups, and structured the project following professional ML standards.",
+    "tech": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "KMeans Clustering",
+      "RFM Analysis",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    "github": "https://github.com/SerajEldeen/Customer_Segmentation",
+    "live": ""
+  },
+  {
     "title": "IBM Customer Churn Prediction",
     "description": "Developed a predictive model to identify customers likely to churn, improving retention strategies by analyzing customer data, engineering features, and evaluating models for accuracy and interpretability.",
     "tech": [
