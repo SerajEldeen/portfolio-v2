@@ -36,7 +36,7 @@ export default function Social() {
         </li>
         <li>
           <Link
-            href="mailto:serageldeen13@gmail.com"
+            href="mailto:serajeldeen.abdullah@gmail.com "
             target="_blank"
             rel="noreferrer"
             className="md:p-0.5  transition-transform hover:text-cyan-500"
